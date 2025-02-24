@@ -1,0 +1,11 @@
+<GameText>
+    <Row Tag="LOC_CIVILIZATION_NORSE_NAME">
+        <Text>Norse</Text>
+    </Row>
+    <Row Tag="LOC_CIVILIZATION_NORSE_DESCRIPTION">
+        <Text>A rugged people of the north, skilled in war and seamanship.</Text>
+    </Row>
+    <Row Tag="LOC_CIVILIZATION_NORSE_ADJECTIVE">
+        <Text>Norse</Text>
+    </Row>
+</GameText>
