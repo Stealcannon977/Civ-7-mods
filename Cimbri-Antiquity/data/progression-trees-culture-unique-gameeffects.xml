@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameEffects xmlns="GameEffects">
-  <Modifier id="PREFIX_CIVIC2_MOD_CITY_CULTURE" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_CONSTRUCTIBLE_YIELD">
+  <Modifier id="CIMBRI_WARFARE_MOD_CITY_CULTURE" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_CONSTRUCTIBLE_YIELD">
     <Argument name="YieldType">YIELD_CULTURE</Argument>
 		<Argument name="Amount">20</Argument>
 		<Argument name="ConstructibleType">BUILDING_CITY_HALL</Argument>
-    <String context="Description">LOC_PREFIX_CIVIC2_MOD_CITY_DESCRIPTION</String>
+    <String context="Description">LOC_CIMBRI_WARFARE_MOD_CITY_DESCRIPTION</String>
   </Modifier>
-  <Modifier id="PREFIX_CIVIC2_MOD_CITY_HAPPINESS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_CONSTRUCTIBLE_YIELD">
+  <Modifier id="CIMBRI_WARFARE_MOD_CITY_HAPPINESS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_CONSTRUCTIBLE_YIELD">
     <Argument name="YieldType">YIELD_HAPPINESS</Argument>
 		<Argument name="Amount">20</Argument>
 		<Argument name="ConstructibleType">BUILDING_CITY_HALL</Argument>
   </Modifier>
-  <Modifier id="PREFIX_CIVIC2_MOD_RESOURCE_CAP" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_RESOURCE_CAP">
+  <Modifier id="CIMBRI_WARFARE_MOD_RESOURCE_CAP" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_RESOURCE_CAP">
 		<SubjectRequirements>
-			<Requirement type="REQUIREMENT_CITY_IS_CITY"/ >
+			<Requirement type="REQUIREMENT_CITY_IS_CITY"/>
 		</SubjectRequirements>
 		<Argument name="Amount">2</Argument>
-		<String context="Description">LOC_PREFIX_CIVIC2_MOD_RESOURCE_CAP_DESCRIPTION</String>
+		<String context="Description">LOC_CIMBRI_WARFARE_MOD_RESOURCE_CAP_DESCRIPTION</String>
 	</Modifier>
 </GameEffects>

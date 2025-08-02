@@ -1,8 +1,8 @@
 {
-  "name": "antiquity-tempalte",
-  "description": "Civilization 7 antiquity-template module",
-  "author": "Archanist!",
-  "version": "1",
+  "name": "cimbri-antiquity",
+  "description": "Civilization 7 Cimbri civilization module",
+  "author": "Civilization VII Mod Creator",
+  "version": "1.0",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",

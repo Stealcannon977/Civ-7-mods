@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameEffects xmlns="GameEffects">
-	<Modifier id="PREFIX_TRAD_SCIENCE_PRODUCTION" collection="COLLECTION_PLAYER_PLOT_YIELDS" effect="EFFECT_PLOT_ADJUST_YIELD">
-		<Argument name="YieldType">YIELD_SCIENCE</Argument>
-		<Argument name="Amount" type="ScaleByGameAge" extra="100">1</Argument>
-		<Argument name="Tooltip">LOC_TRADITION_PREFIX_TRAD_NAME</Argument>
-		<String context="Description">LOC_TRADITION_PREFIX_TRAD_DESCRIPTION</String>
+	<Modifier id="CIMBRI_WANDERER_MOVEMENT_BONUS" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_UNIT_ADJACENT_TO_TERRAIN">
+				<Argument name="TerrainType">TERRAIN_TUNDRA</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">1</Argument>
+		<String context="Description">LOC_TRADITION_CIMBRI_WANDERER_DESCRIPTION</String>
 	</Modifier>
 </GameEffects>
