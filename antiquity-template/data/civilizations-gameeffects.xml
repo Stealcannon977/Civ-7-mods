@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<!-- If you ever wonder what possible game effects there are, the best resource we have so far are the files of the base game, DLC, and other mods-->
+	<!-- As of time of writing, there's no official documentation about all possibilities. Trial and error is your best bet, other than asking around! -->
+	<!-- Modders don't bite, and are generally happy to answer questions -->
+
+	<!-- ==================================================	-->
+	<!--				Civ-Specific Traits					-->
+	<!-- ==================================================	-->
+	<!-- PREFIX_CIVNAME -->
+  <Modifier id="TRAIT_PREFIX_CIVNAME_MOD_CITY_HALL_YIELDS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_CONSTRUCTIBLE_YIELD">
+    <Argument name="YieldType">YIELD_FOOD</Argument>
+		<Argument name="Amount">20</Argument>
+		<Argument name="ConstructibleType">BUILDING_CITY_HALL</Argument>
+  </Modifier>
+
+  <Modifier id="MOD_CODE_OF_LAWS_REVEAL_CIV_CULTURE_TREE_PREFIX_CIVNAME" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_REVEAL_CULTURE_TREE">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_PREFIX_CIVNAME</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="ProgressionTreeType">TREE_CIVICS_AQ_PREFIX_CIVNAME</Argument>
+	</Modifier>
+
+	<!-- ==================================================	-->
+	<!--				Wonder Bonuses						-->
+	<!-- ==================================================	-->
+	<Modifier id="MOD_CIV_WONDER_PRODUCTION_PREFIX_CIVNAME" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_FAVORED_WONDER_PRODUCTION">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_PREFIX_CIVNAME</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Percent">30</Argument>
+		<String context="Preview">LOC_MOD_CIV_WONDER_PRODUCTION_PREFIX_CIVNAME_DESCRIPTION</String>
+	</Modifier>
+</GameEffects>

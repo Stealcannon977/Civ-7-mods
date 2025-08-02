@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <EnglishText>
+    <!--Civilization Names-->
+    <Row Tag="LOC_CIVILIZATION_PREFIX_CIVNAME_NAME">
+      <Text>Civname</Text>
+    </Row>
+    <!--Civilization Full Names-->
+    <Row Tag="LOC_CIVILIZATION_PREFIX_CIVNAME_FULLNAME">
+      <Text>Civfullname</Text>
+    </Row>
+    <!--Civilization Adjectives-->
+    <Row Tag="LOC_CIVILIZATION_PREFIX_CIVNAME_ADJECTIVE">
+      <Text>Civadjective</Text>
+    </Row>
+  </EnglishText>
+
+</Database>

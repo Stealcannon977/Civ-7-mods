@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Kinds>
+		<InsertOrIgnore Kind="KIND_TRADITION"/>
+	</Kinds>
+	<Types>
+		<!--Defines your tradition-->
+		<Row Type="TRADITION_PREFIX_TRAD" Kind="KIND_TRADITION"/>
+	</Types>
+	<Traditions>
+		<!-- Info about your tradition -->
+		<Row TraditionType="TRADITION_PREFIX_TRAD" Name="LOC_TRADITION_PREFIX_TRAD_NAME" Description="LOC_TRADITION_PREFIX_TRAD_DESCRIPTION" TraitType="TRAIT_PREFIX_CIVNAME" AgeType="AGE_ANTIQUITY"/>
+	</Traditions>
+	<TraditionModifiers>
+		<!-- Defines what modifiers apply to what Traditions. Traditions can carry many modifiers -->
+		<Row TraditionType="TRADITION_PREFIX_TRAD" ModifierId="PREFIX_TRAD_SCIENCE_PRODUCTION"/>
+	</TraditionModifiers>
+</Database>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="your-mod-name" version="0.1"
+	xmlns="ModInfo">
+	<Properties>
+		<!-- I've made it easy to find and replace for PREFIX, CIVNAME, etc. -->
+		<!-- The PREFIX is usually going to be your mod handle, whether it's your personal one or group -->
+		<!-- The Prefix is there specifically so that there will be less chance of conflicts with multiple mods -->
+		<!-- Even if you think you'd be the only one who'd mod [insert civilization or leader here], it's good practice -->
+		<!-- You may end up conflicting with a mod with a completely different civ, where two things share the same name but have different meanings -->
+		<Name>LOC_MODULE_PREFIX_CIVNAME_NAME</Name>
+		<Description>LOC_MODULE_PREFIX_CIVNAME_DESCRIPTION</Description>
+		<Authors>Archanist! (your name here you replace mine)</Authors>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title=""/>
+	</Dependencies>
+	<References>
+	</References>
+	<ActionCriteria>
+		<Criteria id="antiquity-age-current">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration-age-current">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+		</Criteria>
+		<Criteria id="modern-age-current">
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+		<Criteria id="antiquity-age-persist" any="true">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="base-game-main-your-mod-name" scope="game" criteria="always">
+			<!-- Anything that needs to exist for the entire game should go here, which is why we put our Civ, and our Traditions here. -->
+			<Actions>
+				<UpdateIcons>
+				</UpdateIcons>
+				<UpdateArt>
+				</UpdateArt>
+				<UpdateDatabase>
+					<Item>data/civilizations-legacy.xml</Item>
+					<Item>data/traditions.xml</Item>
+					<Item>data/traditions-gameeffects.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/CultureText.xml</Item>
+					<Item>text/en_us/CivilizationLegacyText.xml</Item>
+          <Item>text/en_us/LoadingText.xml</Item>
+				</UpdateText>
+				<ImportFiles>
+				</ImportFiles>
+				<UpdateIcons>
+				</UpdateIcons>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-antiquity-main-your-mod-name" scope="game" criteria="antiquity-age-current">
+			<!-- This is where age specific things are -->
+			<Actions>
+				<UpdateArt>
+				</UpdateArt>
+				<UpdateDatabase>
+					<Item>data/civilizations-antiquity.xml</Item>
+					<Item>data/civilizations-gameeffects.xml</Item>
+					<Item>data/constructibles-no-persist.xml</Item>
+					<Item>data/units.xml</Item>
+					<Item>data/units-gameeffects.xml</Item>
+					<Item>data/progression-trees-culture-common.xml</Item>
+					<Item>data/progression-trees-culture-unique.xml</Item>
+					<Item>data/progression-trees-culture-unique-gameeffects.xml</Item>
+					<Item>data/progression-trees-tech.xml</Item>
+					<Item>data/unlocks-antiquity.xml</Item>
+					<Item>data/AI_Antiquity.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/CivilizationText.xml</Item>
+					<Item>text/en_us/UnitText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-antiquity-persist-your-mod-name" scope="game" criteria="antiquity-age-persist">
+			<!-- Anything ageless should go here, that's why the constructibles are here. -->
+			<!-- If you're asking why it doesn't go in criteria="always", I'm guessing it's convention since this is the structure the other ages have too. -->
+			<Actions>
+				<UpdateArt>
+				</UpdateArt>
+				<UpdateDatabase>
+					<Item>data/constructibles.xml</Item>
+					<Item>data/constructibles-gameeffects.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/CityNamesText.xml</Item>
+					<Item>text/en_us/ConstructibleText.xml</Item>
+				</UpdateText>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-exploration-current" scope="game" criteria="exploration-age-current">
+			<Actions>
+				<UpdateArt>
+				</UpdateArt>
+				<UpdateDatabase>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="age-modern-current" scope="game" criteria="modern-age-current">
+			<Actions>
+				<UpdateArt>
+				</UpdateArt>
+				<UpdateDatabase>
+				</UpdateDatabase>
+			</Actions>
+		</ActionGroup>
+		<ActionGroup id="shell-sanseb-tagalog" scope="shell" criteria="always">
+			<!-- This is the shell, where it shows info before a game is loaded in -->
+			<Actions>
+				<UpdateIcons>
+				</UpdateIcons>
+				<UpdateDatabase>
+					<Item>config/config.xml</Item>
+				</UpdateDatabase>
+				<UpdateText>
+					<Item>text/en_us/LoadingText.xml</Item>
+					<Item>text/en_us/CultureText.xml</Item>
+					<Item>text/en_us/CivilizationLegacyText.xml</Item>
+					<Item>text/en_us/CityNamesText.xml</Item>
+					<Item>text/en_us/ConstructibleText.xml</Item>
+					<Item>text/en_us/CivilizationText.xml</Item>
+					<Item>text/en_us/UnitText.xml</Item>
+					<Item>text/en_us/UnlockText.xml</Item>
+				</UpdateText>
+				<ImportFiles>
+				</ImportFiles>
+				<UpdateIcons>
+				</UpdateIcons>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+	<LocalizedText>
+		<File>text/en_us/ModuleText.xml</File>
+	</LocalizedText>
+</Mod>

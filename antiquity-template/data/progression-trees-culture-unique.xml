@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Types>
+		<!-- Defines what's the overall civic tree, and which ones are civics -->
+		<Row Type="TREE_CIVICS_AQ_PREFIX_CIVNAME" Kind="KIND_TREE"/>
+		<Row Type="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1" Kind="KIND_TREE_NODE"/>
+		<Row Type="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" Kind="KIND_TREE_NODE"/>
+	</Types>
+	<TypeQuotes>
+		<!-- Flavor -->
+		<Row Type="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1" Quote="LOC_CIVIC_PREFIX_CIVNAME_CIVIC1_QUOTE" QuoteAuthor="LOC_CIVIC_PREFIX_CIVNAME_CIVIC1_QUOTE_AUTHOR"/>
+		<Row Type="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" Quote="LOC_CIVIC_PREFIX_CIVNAME_CIVIC2_QUOTE" QuoteAuthor="LOC_CIVIC_PREFIX_CIVNAME_CIVIC2_QUOTE_AUTHOR"/>
+	</TypeQuotes>
+	<ProgressionTrees>
+		<!-- Info about the unique civic tree -->
+		<Row ProgressionTreeType="TREE_CIVICS_AQ_PREFIX_CIVNAME" AgeType="AGE_ANTIQUITY" SystemType="SYSTEM_CULTURE" Name="LOC_TREE_CIVICS_AQ_PREFIX_CIVNAME_NAME"/>
+	</ProgressionTrees>
+	<ProgressionTreeNodes>
+		<!-- Civs usually have 3-4 Civics, and 3-4 Traditions -->
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1" ProgressionTree="TREE_CIVICS_AQ_PREFIX_CIVNAME" Cost="170" Name="LOC_CIVIC_PREFIX_CIVNAME_CIVIC1_NAME" IconString="cult_sanseb_tagalog"/>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" ProgressionTree="TREE_CIVICS_AQ_PREFIX_CIVNAME" Cost="170" Name="LOC_CIVIC_PREFIX_CIVNAME_CIVIC2_NAME" IconString="cult_sanseb_tagalog"/>
+	</ProgressionTreeNodes>
+	<ProgressionTreeNodeUnlocks>
+		<!-- These unlocks can be modifiers (which will kick in immedeately), traditions, constructibles, or units -->
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1" TargetKind="KIND_MODIFIER" TargetType="MOD_AQ_SETTLEMENT_CAP_INCREASE" UnlockDepth="1"/>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1" TargetKind="KIND_TRADITION" TargetType="TRADITION_PREFIX_TRAD" UnlockDepth="1"/>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1" TargetKind="KIND_CONSTRUCTIBLE" TargetType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" UnlockDepth="2"/>
+		
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" TargetKind="KIND_MODIFIER" TargetType="PREFIX_CIVIC2_MOD_CITY_CULTURE" UnlockDepth="1"/>
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" TargetKind="KIND_MODIFIER" TargetType="PREFIX_CIVIC2_MOD_CITY_HAPPINESS" UnlockDepth="1" Hidden="true"/>
+		<!-- Hidden="true" hides it from the UI. Useful if you have a bunch of similar modifiers that you want to encompass in one tooltip -->	
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" TargetKind="KIND_MODIFIER" TargetType="PREFIX_CIVIC2_MOD_RESOURCE_CAP" UnlockDepth="2"/>
+		<!-- UnlockDepth="2" means it's a mastery-->
+	</ProgressionTreeNodeUnlocks>
+	<ProgressionTreePrereqs>
+		<!-- Defines what civics must be researched first -->
+		<Row Node="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC2" PrereqNode="NODE_CIVIC_AQ_PREFIX_CIVNAME_CIVIC1"/>
+	</ProgressionTreePrereqs>
+</Database>

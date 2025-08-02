@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_CITY_NAME_PREFIX_CIVNAME1">
+			<Text>Capital</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_PREFIX_CIVNAME2">
+			<Text>City 2</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_PREFIX_CIVNAME3">
+			<Text>City 3</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_PREFIX_CIVNAME4">
+			<Text>City 4</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_PREFIX_CIVNAME5">
+			<Text>City 5</Text>
+		</Row>
+	</EnglishText>
+</Database>

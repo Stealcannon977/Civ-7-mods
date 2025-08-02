@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<Modifier id="PREFIX_TRAD_SCIENCE_PRODUCTION" collection="COLLECTION_PLAYER_PLOT_YIELDS" effect="EFFECT_PLOT_ADJUST_YIELD">
+		<Argument name="YieldType">YIELD_SCIENCE</Argument>
+		<Argument name="Amount" type="ScaleByGameAge" extra="100">1</Argument>
+		<Argument name="Tooltip">LOC_TRADITION_PREFIX_TRAD_NAME</Argument>
+		<String context="Description">LOC_TRADITION_PREFIX_TRAD_DESCRIPTION</String>
+	</Modifier>
+</GameEffects>

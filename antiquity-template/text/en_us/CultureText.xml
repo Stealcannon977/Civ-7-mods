@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+
+		<!-- ==================================================	-->
+		<!--	TODO: PREFIX_CIVNAME							-->
+		<!-- ==================================================	-->
+		<Row Tag="LOC_TREE_CIVICS_AQ_PREFIX_CIVNAME_NAME">
+			<Text>Civname Civics</Text>
+		</Row>
+    
+		<Row Tag="LOC_CIVIC_PREFIX_CIVNAME_CIVIC1_NAME">
+			<Text>Civic1 Name</Text>
+		</Row>
+
+    <Row Tag="LOC_CIVIC_PREFIX_CIVNAME_CIVIC2_NAME">
+			<Text>Civic2 Name</Text>
+		</Row>
+		<Row Tag="LOC_PREFIX_CIVIC2_MOD_CITY_DESCRIPTION">
+			<Text>Civic2 Description</Text>
+		</Row>
+		<Row Tag="LOC_PREFIX_CIVIC2_MOD_RESOURCE_CAP_DESCRIPTION">
+			<Text>Cities have a +2 resource cap</Text>
+		</Row>
+
+    <Row Tag="LOC_TRADITION_PREFIX_TRAD_NAME">
+			<Text>Tradition Name</Text>
+		</Row>
+		<Row Tag="LOC_TRADITION_PREFIX_TRAD_DESCRIPTION">
+			<Text>Tradition Description</Text>
+		</Row>
+
+    <Row Tag="LOC_CIVIC_PREFIX_CIVNAME_CIVIC2_QUOTE">
+			<Text>Civic2 Quote</Text>
+		</Row>
+    <Row Tag="LOC_CIVIC_PREFIX_CIVNAME_CIVIC2_QUOTE_AUTHOR">
+			<Text>Civic2 Quote Author</Text>
+		</Row>
+
+    <Row Tag="LOC_CIVIC_PREFIX_CIVNAME_CIVIC1_QUOTE">
+			<Text>Civic1 Quote</Text>
+		</Row>
+    <Row Tag="LOC_CIVIC_PREFIX_CIVNAME_CIVIC1_QUOTE_AUTHOR">
+			<Text>Civic 1 Quote Author</Text>
+		</Row>
+	</EnglishText>
+</Database>

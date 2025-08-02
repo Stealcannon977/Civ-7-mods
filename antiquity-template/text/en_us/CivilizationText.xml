@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<!--Civilization Traits-->
+		<Row Tag="LOC_TRAIT_PREFIX_CIVNAME_ABILITY_NAME">
+			<Text>Civabilityname</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_PREFIX_CIVNAME_DESCRIPTION">
+			<Text>Civdescription</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_PREFIX_CIVNAME_ABILITY_DESCRIPTION">
+			<Text>
+        [LIST]
+          [LI][B]You can use this as a template![/B] [icon:YIELD_HAPPINESS][icon:YIELD_GOLD][icon:YIELD_PRODUCTION][icon:YIELD_SCIENCE][icon:YIELD_CULTURE][icon:YIELD_DIPLOMACY]
+          [LI][B]+30% [icon:YIELD_PRODUCTION] Production[/B] towards constructing [B] the associated wonder[/B]
+        [/LIST]
+      </Text>
+		</Row>
+		<Row Tag="LOC_MOD_CIV_WONDER_PRODUCTION_PREFIX_CIVNAME_DESCRIPTION">
+			<Text>+30%[icon:YIELD_PRODUCTION] Production from being the Civname's associated Wonder.</Text>
+		</Row>
+	</EnglishText>
+</Database>

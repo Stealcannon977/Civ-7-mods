@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<ProgressionTreeNodeUnlocks>
+		<!-- Check Base/modules/age-antiquity/data/progression-trees-tech.xml -->
+		<!-- In general, replacements unlock at the same time as the unit it replaces. You can choose other nodes as well (or even in the other tree) -->
+		<Row ProgressionTreeNodeType="NODE_TECH_AQ_BRONZE_WORKING" TargetKind="KIND_UNIT" TargetType="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" UnlockDepth="1" RequiredTraitType="TRAIT_PREFIX_CIVNAME"/>
+		<Row ProgressionTreeNodeType="NODE_TECH_AQ_IRON_WORKING" TargetKind="KIND_UNIT" TargetType="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" UnlockDepth="1" RequiredTraitType="TRAIT_PREFIX_CIVNAME"/>
+		<Row ProgressionTreeNodeType="NODE_TECH_AQ_MASONRY" TargetKind="KIND_CONSTRUCTIBLE" TargetType="WONDER_PREFIX_WONDERNAME" UnlockDepth="2"/>
+	</ProgressionTreeNodeUnlocks>
+</Database>

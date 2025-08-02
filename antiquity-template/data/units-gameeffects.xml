@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<Modifier id="PREFIX_COMMANDER_REPLACEMENT_MOD_FREE_PROMOTION" collection="COLLECTION_OWNER" effect="EFFECT_GRANT_UNIT_PROMOTION" permanent="true">
+		<Argument name="UnitPromotionType">PROMOTION_ARMY_ZEAL</Argument>
+		<Argument name="UnitPromotionDisciplineType">DISCIPLINE_ARMY_LEADERSHIP</Argument>
+	</Modifier>
+</GameEffects>

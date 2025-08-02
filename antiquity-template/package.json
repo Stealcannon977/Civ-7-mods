@@ -1,0 +1,15 @@
+{
+  "name": "antiquity-tempalte",
+  "description": "Civilization 7 antiquity-template module",
+  "author": "Archanist!",
+  "version": "1",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*": "./src/*"
+  },
+  "dependencies": {
+    "modding-sdk": "workspace:*"
+  }
+}

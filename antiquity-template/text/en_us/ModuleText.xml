@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MODULE_PREFIX_CIVNAME_NAME">
+			<Text>This is your modname</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_PREFIX_CIVNAME_DESCRIPTION">
+			<Text>This is your description</Text>
+		</Row>
+	</EnglishText>
+</Database>

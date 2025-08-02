@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Types>
+		<!-- Major Civs -->
+		<Row Type="TRAIT_PREFIX_CIVNAME" Kind="KIND_TRAIT"/>
+		<Row Type="CIVILIZATION_PREFIX_CIVNAME" Kind="KIND_CIVILIZATION"/>
+	</Types>
+	<LegacyCivilizations>
+		<!-- Full Civs -->
+		<Row CivilizationType="CIVILIZATION_PREFIX_CIVNAME" Name="LOC_CIVILIZATION_PREFIX_CIVNAME_NAME" FullName="LOC_CIVILIZATION_PREFIX_CIVNAME_FULLNAME" Adjective="LOC_CIVILIZATION_PREFIX_CIVNAME_ADJECTIVE" Age="AGE_ANTIQUITY"/>
+	</LegacyCivilizations>
+	<LegacyCivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TraitType="TRAIT_PREFIX_CIVNAME"/>
+	</LegacyCivilizationTraits>
+	<Traits>
+		<Row TraitType="TRAIT_PREFIX_CIVNAME" InternalOnly="true"/>
+	</Traits>
+	<LegacyLeaderCivPriorities>
+		<Row Leader="LEADER_JOSE_RIZAL" CivilizationType="CIVILIZATION_PREFIX_CIVNAME"/>
+	</LegacyLeaderCivPriorities>
+</Database>

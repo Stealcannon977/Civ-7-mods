@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Types>
+    <Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Kind="KIND_UNIT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Kind="KIND_UNIT"/>
+    <Row Type="UNIT_PREFIX_COMMANDER_REPLACEMENT" Kind="KIND_UNIT"/>
+    <Row Type="ABILITY_PREFIX_COMMANDER_REPLACEMENT" Kind="KIND_ABILITY"/>
+	</Types>
+	<Units>
+		<!-- Don't forget the Trait name, that's what makes it unique -->
+    <Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT" Name="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_NAME" Description="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_DESCRIPTION" Tier="1" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true" TraitType="TRAIT_PREFIX_CIVNAME"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Name="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_NAME" Description="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_2_DESCRIPTION" Tier="2" Maintenance="1" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true" TraitType="TRAIT_PREFIX_CIVNAME"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Name="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_NAME" Description="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_3_DESCRIPTION" Tier="3" Maintenance="2" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true" TraitType="TRAIT_PREFIX_CIVNAME"/>
+    <Row UnitType="UNIT_PREFIX_COMMANDER_REPLACEMENT" Name="LOC_UNIT_PREFIX_COMMANDER_REPLACEMENT_NAME" Description="LOC_UNIT_PREFIX_COMMANDER_REPLACEMENT_DESCRIPTION" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_SUPPORT" FormationClass="FORMATION_CLASS_COMMAND" ZoneOfControl="true" CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" CostProgressionParam1="40" CanEarnExperience="true" PromotionClass="PROMOTION_CLASS_LAND_COMMANDER" TraitType="TRAIT_PREFIX_CIVNAME"/>
+	</Units>
+	<Unit_Stats>
+		<!-- Non combat units don't need this -->
+    <Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT" Combat="25"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Combat="30"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Combat="35"/>
+    <Row UnitType="UNIT_PREFIX_COMMANDER_REPLACEMENT"/>
+	</Unit_Stats>
+	<Unit_Costs>
+    <Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT" YieldType="YIELD_PRODUCTION" Cost="35"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" YieldType="YIELD_PRODUCTION" Cost="65"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" YieldType="YIELD_PRODUCTION" Cost="105"/>
+    <Row UnitType="UNIT_PREFIX_COMMANDER_REPLACEMENT" YieldType="YIELD_PRODUCTION" Cost="100"/>
+	</Unit_Costs>
+	<Unit_Advisories>
+    <Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+		<Row UnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+    <Row UnitType="UNIT_PREFIX_COMMANDER_REPLACEMENT" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+	</Unit_Advisories>
+	<Unit_RequiredConstructibles>
+		<!-- If a unit needs a constructible to exist before you can build it. Usually used for Naval units -->
+	</Unit_RequiredConstructibles>
+	<UnitUpgrades>
+		<!-- This allows your unit to upgrade. It can be any unit, so you can have some of your units upgrade into a different class -->
+    <Row Unit="UNIT_PREFIX_INFANTRY_REPLACEMENT" UpgradeUnit="UNIT_PREFIX_INFANTRY_REPLACEMENT_2"/>
+		<Row Unit="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" UpgradeUnit="UNIT_PREFIX_INFANTRY_REPLACEMENT_3"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<!-- Replacements generally mean you won't be able to receive the original unit type -->
+    <Row CivUniqueUnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT" ReplacesUnitType="UNIT_WARRIOR"/>
+		<Row CivUniqueUnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" ReplacesUnitType="UNIT_SPEARMAN"/>
+		<Row CivUniqueUnitType="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" ReplacesUnitType="UNIT_PHALANX"/>
+    <Row CivUniqueUnitType="UNIT_PREFIX_COMMANDER_REPLACEMENT" ReplacesUnitType="UNIT_ARMY_COMMANDER"/>
+	</UnitReplaces>
+  <Unit_TransitionRetains>
+		<!-- If the game should carry over your unit to the next age -->
+		<Row UnitType="UNIT_PREFIX_COMMANDER_REPLACEMENT"/>
+	</Unit_TransitionRetains>
+	<Tags>
+		<!-- Defines the class. You may want to use this for any modifier that affects your unique unit specifically -->
+    <Row Tag="UNIT_CLASS_PREFIX_INFANTRY_REPLACEMENT" Category="UNIT_CLASS"/>
+    <Row Tag="UNIT_CLASS_PREFIX_COMMANDER_REPLACEMENT" Category="UNIT_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<!-- Don't forget to put proper tags, this is how some modifiers such as traditions or civics update your units -->
+    <Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT" Tag="UNIT_CLASS_PREFIX_INFANTRY_REPLACEMENT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Tag="UNIT_CLASS_PREFIX_INFANTRY_REPLACEMENT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Tag="UNIT_CLASS_PREFIX_INFANTRY_REPLACEMENT"/>
+		<Row Type="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Tag="UNIT_CLASS_ELITE_INFANTRY"/>
+    <Row Type="UNIT_PREFIX_COMMANDER_REPLACEMENT" Tag="UNIT_CLASS_COMMAND"/>
+		<Row Type="UNIT_PREFIX_COMMANDER_REPLACEMENT" Tag="UNIT_CLASS_ARMY_COMMANDER"/>
+		<Row Type="UNIT_PREFIX_COMMANDER_REPLACEMENT" Tag="UNIT_CLASS_PREFIX_COMMANDER_REPLACEMENT"/>
+	</TypeTags>
+	<UnitClass_Abilities>
+		<!-- This shows what UnitClass has what Ability -->
+    <Row UnitAbilityType="ABILITY_PREFIX_COMMANDER_REPLACEMENT" UnitClassType="UNIT_CLASS_PREFIX_COMMANDER_REPLACEMENT"/>
+	</UnitClass_Abilities>
+	<UnitAbilities>
+		<!-- This shows what Abilities exist -->
+    <Row UnitAbilityType="ABILITY_PREFIX_COMMANDER_REPLACEMENT" Name="LOC_ABILITY_PREFIX_COMMANDER_REPLACEMENT_NAME" Description="LOC_ABILITY_PREFIX_COMMANDER_REPLACEMENT_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<!-- This shows what Modifiers exist in which Ability -->
+    <Row UnitAbilityType="ABILITY_PREFIX_COMMANDER_REPLACEMENT" ModifierId="PREFIX_COMMANDER_REPLACEMENT_MOD_FREE_PROMOTION"/>
+	</UnitAbilityModifiers>
+</Database>

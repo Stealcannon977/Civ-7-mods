@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<AiListTypes>
+		<!-- Civname -->
+		<Row ListType="Civname Unit Biases"/>
+		<Row ListType="Civname Government Bias"/>
+		<Row ListType="Civname Settle Plot Conditions" />
+		<Row ListType="Civname Constructibles Biases" />
+		<Row ListType="Civname Tag Biases" />
+
+	</AiListTypes>
+	<AiLists>
+		<!-- Civname -->
+		<Row ListType="Civname Unit Biases" LeaderType="TRAIT_PREFIX_CIVNAME" System="UnitBiases"/>
+		<Row ListType="Civname Government Bias" LeaderType="TRAIT_PREFIX_CIVNAME" System="GovernmentBiases"/>
+		<Row ListType="Civname Settle Plot Conditions" LeaderType="TRAIT_PREFIX_CIVNAME" System="SettlementPlotEvaluations"/>
+		<Row ListType="Civname Constructibles Biases" LeaderType="TRAIT_PREFIX_CIVNAME" System="ConstructibleBiases" />
+		<Row ListType="Civname Tag Biases" LeaderType="TRAIT_PREFIX_CIVNAME" System="TagBiases"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!-- Civname -->
+		<!-- Higher means more likely -->
+    <Row ListType="Civname Unit Biases" Item="UNIT_PREFIX_INFANTRY_REPLACEMENT" Value="50"/>
+    <Row ListType="Civname Unit Biases" Item="UNIT_PREFIX_INFANTRY_REPLACEMENT_2" Value="50"/>
+    <Row ListType="Civname Unit Biases" Item="UNIT_PREFIX_INFANTRY_REPLACEMENT_3" Value="50"/>
+    <Row ListType="Civname Constructibles Biases" Item="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" Value="50" />
+    <Row ListType="Civname Constructibles Biases" Item="WONDER_PREFIX_WONDERNAME" Value="50" />
+    <Row ListType="Civname Tag Biases" Item="HAPPINESS" Value="50"/>
+		<Row ListType="Civname Government Bias" Item="GOVERNMENT_OLIGARCHY" Value="50"/>
+		<Row ListType="Civname Settle Plot Conditions" Item="Specific Terrain" Value="50" StringVal="TERRAIN_TROPICAL" TooltipString="LOC_SETTLEMENT_RECOMMENDATION_TERRAIN"/>
+	</AiFavoredItems>
+</Database>

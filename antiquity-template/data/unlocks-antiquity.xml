@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Kinds>
+		<InsertOrIgnore Kind="KIND_UNLOCK"/>
+	</Kinds>
+	<RequirementSets>
+		<Row RequirementSetId="REQSET_CIV_IS_PREFIX_CIVNAME" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+	</RequirementSets>
+	<Requirements>
+		<Row RequirementId="REQ_CIV_IS_PREFIX_CIVNAME" RequirementType="REQUIREMENT_PLAYER_CIVILIZATION_TYPE_MATCHES"/>
+	</Requirements>
+	<RequirementArguments>
+		<Row RequirementId="REQ_CIV_IS_PREFIX_CIVNAME" Name="CivilizationType" Value="CIVILIZATION_PREFIX_CIVNAME"/>
+	</RequirementArguments>
+	<RequirementSetRequirements>
+		<Row RequirementSetId="REQSET_CIV_IS_PREFIX_CIVNAME" RequirementId="REQ_CIV_IS_PREFIX_CIVNAME"/>
+	</RequirementSetRequirements>
+	<!-- This civ will unlock the following civs. You can also unlock any civ from the Modern age, it doesn't have to be Exploration. -->
+	<!-- I recommend you have at least one civ unlock in the next era, to avoid softlocking your players. -->
+	<UnlockRequirements>
+		<Row UnlockType="UNLOCK_CIVILIZATION_CHOLA" RequirementSetId="REQSET_CIV_IS_PREFIX_CIVNAME" Description="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_DESCRIPTION" Tooltip="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_CHOLA_TOOLTIP"/>
+    <Row UnlockType="UNLOCK_CIVILIZATION_MAJAPAHIT" RequirementSetId="REQSET_CIV_IS_PREFIX_CIVNAME" Description="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_DESCRIPTION" Tooltip="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_MAJAPAHIT_TOOLTIP"/>
+	</UnlockRequirements>
+</Database>
