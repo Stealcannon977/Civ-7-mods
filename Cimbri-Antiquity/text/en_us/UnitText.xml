@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Database>
 	<EnglishText>
-		<Row Tag="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_NAME">
-			<Text>Infantry Replacement</Text>
+		<Row Tag="LOC_UNIT_CIMBRI_AMBRONES_NAME">
+			<Text>Ambrones</Text>
 		</Row>
-		<Row Tag="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_BASE_DESCRIPTION">
-			<Text>Civname Unique Infantry Unit. Description.</Text>
+		<Row Tag="LOC_UNIT_CIMBRI_AMBRONES_DESCRIPTION">
+			<Text>Cimbri unique warrior unit. Elite tribal warriors known for their ferocity in battle. Gains +5 Combat Strength when fighting in Tundra terrain.</Text>
 		</Row>
-        <Row Tag="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_DESCRIPTION">
-			<Text>Tier 1 Civname Unique Infantry Unit. Description.</Text>
+		<Row Tag="LOC_ABILITY_CIMBRI_AMBRONES_WARRIOR_NAME">
+			<Text>Northern Warrior</Text>
 		</Row>
-        <Row Tag="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_2_DESCRIPTION">
-			<Text>Tier 2 Civname Unique Infantry Unit. Description.</Text>
+		<Row Tag="LOC_ABILITY_CIMBRI_AMBRONES_WARRIOR_DESCRIPTION">
+			<Text>Elite Cimbri warriors adapted to harsh northern climates.</Text>
 		</Row>
-        <Row Tag="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_3_DESCRIPTION">
-			<Text>Tier 3 Civname Unique Infantry Unit. Description.</Text>
-		</Row>
-		<Row Tag="LOC_UNIT_PREFIX_COMMANDER_REPLACEMENT_NAME">
-			<Text>Commander Replacement</Text>
-		</Row>
-		<Row Tag="LOC_UNIT_PREFIX_COMMANDER_REPLACEMENT_DESCRIPTION">
-      <Text>Civname Unique Army Commander. Description.</Text>
+		<Row Tag="LOC_ABILITY_CIMBRI_AMBRONES_TUNDRA_COMBAT_DESCRIPTION">
+			<Text>+5 Combat Strength when fighting in Tundra terrain.</Text>
 		</Row>
 	</EnglishText>
 </Database>

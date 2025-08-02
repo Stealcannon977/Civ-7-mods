@@ -14,18 +14,46 @@
 		<Argument name="ConstructibleType">BUILDING_CITY_HALL</Argument>
   </Modifier>
 
-	<!-- Northern Fury: Units gain happiness when adjacent to tundra/snow -->
-	<Modifier id="TRAIT_CIMBRI_NORTHERN_FURY_HAPPINESS" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_HAPPINESS">
+	<!-- Northern Fury: Units gain movement in tundra/snow -->
+	<Modifier id="TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_TUNDRA" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
 		<SubjectRequirements>
 			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
 				<Argument name="TraitType">TRAIT_CIMBRI_ABILITY</Argument>
 			</Requirement>
-			<Requirement type="REQUIREMENT_UNIT_ADJACENT_TO_TERRAIN">
+			<Requirement type="REQUIREMENT_UNIT_ON_TERRAIN">
 				<Argument name="TerrainType">TERRAIN_TUNDRA</Argument>
 			</Requirement>
 		</SubjectRequirements>
 		<Argument name="Amount">1</Argument>
-		<String context="Preview">LOC_TRAIT_CIMBRI_NORTHERN_FURY_HAPPINESS_DESCRIPTION</String>
+		<String context="Preview">LOC_TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_DESCRIPTION</String>
+	</Modifier>
+
+	<Modifier id="TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_SNOW" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI_ABILITY</Argument>
+			</Requirement>
+			<Requirement type="REQUIREMENT_UNIT_ON_TERRAIN">
+				<Argument name="TerrainType">TERRAIN_SNOW</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">1</Argument>
+		<String context="Preview">LOC_TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_DESCRIPTION</String>
+	</Modifier>
+
+	<!-- Tundra adaptation: +2 food from tundra tiles -->
+	<Modifier id="TRAIT_CIMBRI_TUNDRA_FOOD_BONUS" collection="COLLECTION_PLAYER_PLOTS" effect="EFFECT_ADJUST_TERRAIN_YIELD">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI_ABILITY</Argument>
+			</Requirement>
+			<Requirement type="REQUIREMENT_PLOT_TERRAIN">
+				<Argument name="TerrainType">TERRAIN_TUNDRA</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="YieldType">YIELD_FOOD</Argument>
+		<Argument name="Amount">2</Argument>
+		<String context="Preview">LOC_TRAIT_CIMBRI_TUNDRA_FOOD_DESCRIPTION</String>
 	</Modifier>
 
   <Modifier id="MOD_CODE_OF_LAWS_REVEAL_CIV_CULTURE_TREE_CIMBRI" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_REVEAL_CULTURE_TREE">
