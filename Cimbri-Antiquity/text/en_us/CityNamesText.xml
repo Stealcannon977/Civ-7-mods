@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_CITY_NAME_CIMBRI1">
+			<Text>Himmerland</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI2">
+			<Text>Norskov</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI3">
+			<Text>Aalborg</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI4">
+			<Text>Vendsyssel</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI5">
+			<Text>Thisted</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI6">
+			<Text>Skagen</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI7">
+			<Text>Herning</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI8">
+			<Text>Silkeborg</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI9">
+			<Text>Viborg</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_CIMBRI10">
+			<Text>Randers</Text>
+		</Row>
+	</EnglishText>
+</Database>

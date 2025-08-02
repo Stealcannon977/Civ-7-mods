@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The things here are purely UI, and what are seen when a player is in a civilization selection screen. -->
+<Database>
+	<LeaderCivilizationBias>
+	</LeaderCivilizationBias>
+	<Civilizations>
+		<Row Domain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" CivilizationName="LOC_CIVILIZATION_PREFIX_CIVNAME_NAME" CivilizationFullName="LOC_CIVILIZATION_PREFIX_CIVNAME_FULLNAME" CivilizationDescription="LOC_CIVILIZATION_PREFIX_CIVNAME_DESCRIPTION"  CivilizationIcon="civ_sym_sanseb_tagalog"/>
+	</Civilizations>
+	<CivilizationItems>
+		<!-- These are where you show the unique things of your civilization, but the logic comes from your civilization's trait and what's attached to it -->
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" Type="TRAIT_PREFIX_CIVNAME_ABILITY" Kind="KIND_TRAIT" Name="LOC_TRAIT_PREFIX_CIVNAME_ABILITY_NAME" Description="LOC_TRAIT_PREFIX_CIVNAME_ABILITY_DESCRIPTION"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" Type="UNIT_PREFIX_INFANTRY_REPLACEMENT" Kind="KIND_UNIT" Name="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_NAME" Description="LOC_UNIT_PREFIX_INFANTRY_REPLACEMENT_BASE_DESCRIPTION" Icon="todo"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" Type="UNIT_PREFIX_COMMANDER_REPLACEMENT" Kind="KIND_UNIT" Name="LOC_UNIT_PREFIX_COMMANDER_REPLACEMENT_NAME" Description="LOC_UNIT_PREFIX_COMMANDER_REPLACEMENT_DESCRIPTION" Icon="todo"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" Type="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" Kind="KIND_IMPROVEMENT" Name="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_NAME" Description="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_DESCRIPTION" Icon="todo"/>
+	</CivilizationItems>
+	<CivilizationUnlocks>
+		<!-- These show what your civilization will unlock. Actual unlock logic is in unlocks-antiquity.xml -->
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" AgeDomain="StandardAges" AgeType="AGE_EXPLORATION" Type="CIVILIZATION_MAJAPAHIT" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_MAJAPAHIT_NAME" Description="LOC_CIVILIZATION_MAJAPAHIT_DESCRIPTION" Icon="CIVILIZATION_MAJAPAHIT"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" AgeDomain="StandardAges" AgeType="AGE_EXPLORATION" Type="CIVILIZATION_CHOLA" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_CHOLA_NAME" Description="LOC_CIVILIZATION_CHOLA_DESCRIPTION" Icon="CIVILIZATION_CHOLA"/>
+	</CivilizationUnlocks>
+	<CivilizationTags>
+		<!-- This is used for display, actual attribute logic is in civilizations-antiquity.xml -->
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TagType="TAG_TRAIT_CULTURAL"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TagType="TAG_TRAIT_POLITICAL"/> <!-- This is Diplomatic -->
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TagType="TAG_TRAIT_ECONOMIC"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TagType="TAG_TRAIT_EXPENSIONIST"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TagType="TAG_TRAIT_MILITARISTIC"/>
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" TagType="TAG_TRAIT_SCIENTIFIC"/>
+	</CivilizationTags>
+	<LeaderCivilizationBias>
+		<!--This is the table used for UI, the AI uses LeaderCivPriorities in civilizations.xml-->
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" LeaderDomain="StandardLeaders" LeaderType="LEADER_JOSE_RIZAL" Bias="4" ReasonType="LOC_UNLOCK_PLAY_AS_JOSE_RIZAL_PREFIX_CIVNAME_TOOLTIP" ChoiceType="LOC_CREATE_GAME_HISTORICAL_CHOICE" />
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" LeaderDomain="StandardLeaders" LeaderType="LEADER_TRUNG_TRAC" Bias="2" ReasonType="LOC_UNLOCK_PLAY_AS_TRUNG_TRAC_PREFIX_CIVNAME_TOOLTIP" ChoiceType="LOC_CREATE_GAME_GEOGRAPHIC_CHOICE" />
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" LeaderDomain="StandardLeaders" LeaderType="LEADER_HIMIKO" Bias="2" ReasonType="LOC_UNLOCK_PLAY_AS_HIMIKO_PREFIX_CIVNAME_TOOLTIP" ChoiceType="LOC_CREATE_GAME_GEOGRAPHIC_CHOICE" />
+		<Row CivilizationDomain="AntiquityAgeCivilizations" CivilizationType="CIVILIZATION_PREFIX_CIVNAME" LeaderDomain="StandardLeaders" LeaderType="LEADER_CONFUCIUS" Bias="1" ReasonType="LOC_UNLOCK_PLAY_AS_CONFUCIUS_PREFIX_CIVNAME_TOOLTIP" ChoiceType="LOC_CREATE_GAME_STRATEGIC_CHOICE" />
+	</LeaderCivilizationBias>
+</Database>

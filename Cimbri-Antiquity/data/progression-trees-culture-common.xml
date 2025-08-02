@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<ProgressionTreeNodeUnlocks>
+		<!-- Check Base/modules/age-antiquity/data/progression-trees-culture-common.xml -->
+		<!-- The Chiefdom Civic unlock is specifcally so your Antiquity civ cannot start its unique civic tree until Chiefdom is researched -->
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_MAIN_CHIEFDOM" TargetKind="KIND_MODIFIER" TargetType="MOD_CODE_OF_LAWS_REVEAL_CIV_CULTURE_TREE_PREFIX_CIVNAME" UnlockDepth="1" Hidden="true"/>
+		<!-- In general, replacements unlock at the same time as the unit it replaces. You can choose other nodes as well (or even in the other tree) -->
+		<Row ProgressionTreeNodeType="NODE_CIVIC_AQ_MAIN_DISCIPLINE" TargetKind="KIND_UNIT" TargetType="UNIT_PREFIX_COMMANDER_REPLACEMENT" UnlockDepth="1" RequiredTraitType="TRAIT_PREFIX_CIVNAME"/>
+	</ProgressionTreeNodeUnlocks>
+</Database>

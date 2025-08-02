@@ -1,0 +1,87 @@
+<Database>
+	<Types>
+		<!-- Major Civs -->
+		<Row Type="TRAIT_CIMBRI_ABILITY" Kind="KIND_TRAIT"/>
+	</Types>
+	<Kinds>
+		<InsertOrIgnore KIND="KIND_TRAIT"/>
+	</Kinds>
+	<Civilizations>
+		<!-- Full Civs -->
+		<Row CivilizationType="CIVILIZATION_CIMBRI" Name="LOC_CIVILIZATION_CIMBRI_NAME" FullName="LOC_CIVILIZATION_CIMBRI_FULLNAME" Description="LOC_CIVILIZATION_CIMBRI_DESCRIPTION" Adjective="LOC_CIVILIZATION_CIMBRI_ADJECTIVE" StartingCivilizationLevelType="CIVILIZATION_LEVEL_FULL_CIV" UniqueCultureProgressionTree="TREE_CIVICS_AQ_CIMBRI" CapitalName="LOC_CITY_NAME_CIMBRI1" RandomCityNameDepth="10"/>
+	</Civilizations>
+	<CivilizationFavoredWonders>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" FavoredWonderType="WONDER_STONEHENGE" FavoredWonderName="LOC_WONDER_STONEHENGE_NAME"/>
+	</CivilizationFavoredWonders>
+	<Traits>
+		<!--Civ Traits-->
+		<Row TraitType="TRAIT_CIMBRI_ABILITY" Name="LOC_TRAIT_CIMBRI_ABILITY_NAME" Description="LOC_TRAIT_CIMBRI_ABILITY_DESCRIPTION" InternalOnly="true"/>
+	</Traits>
+	<TraitModifiers>
+		<Row TraitType="TRAIT_CIMBRI_ABILITY" ModifierId="MOD_CIV_WONDER_PRODUCTION_CIMBRI"/>
+		<Row TraitType="TRAIT_CIMBRI_ABILITY" ModifierId="TRAIT_CIMBRI_MOD_CITY_HALL_YIELDS"/>
+		<Row TraitType="TRAIT_CIMBRI_ABILITY" ModifierId="TRAIT_CIMBRI_NORTHERN_FURY_HAPPINESS"/>
+	</TraitModifiers>
+	<CivilizationTraits>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" TraitType="TRAIT_ANTIQUITY_CIV"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" TraitType="TRAIT_CIMBRI"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" TraitType="TRAIT_CIMBRI_ABILITY"/>
+		<!-- Choose two below-->
+		<Row CivilizationType="CIVILIZATION_CIMBRI" TraitType="TRAIT_ATTRIBUTE_MILITARISTIC"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" TraitType="TRAIT_ATTRIBUTE_EXPANSIONIST"/>
+	</CivilizationTraits>
+	<RequirementSets>
+		<Row RequirementSetId="REQSET_PLAYER_IS_CIMBRI" RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row RequirementSetId="REQSET_PLAYER_IS_CIMBRI" RequirementId="REQ_PLAYER_HAS_TRAIT_CIMBRI"/>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row RequirementId="REQ_PLAYER_HAS_TRAIT_CIMBRI" RequirementType="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT"/>
+	</Requirements>
+	<RequirementArguments>
+		<Row RequirementId="REQ_PLAYER_HAS_TRAIT_CIMBRI" Name="TraitType" Value="TRAIT_CIMBRI"/>
+	</RequirementArguments>
+	<LeaderCivPriorities>
+		<!--This is the table used for AI, the UI uses LeaderCivilizationBias in config.xml-->
+		<Row Leader="LEADER_JOSE_RIZAL" Civilization="CIVILIZATION_CIMBRI" Priority="4"/>
+	</LeaderCivPriorities>
+	<CityNames>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI1"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI2"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI3"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI4"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI5"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI6"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI7"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI8"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI9"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" CityName="LOC_CITY_NAME_CIMBRI10"/>
+		<!-- You can add more cities. Most Civs have 30-40 city names. -->
+	</CityNames>
+	<!-- Higher Score = More Likely -->
+	<StartBiasBiomes>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" BiomeType="BIOME_TUNDRA" Score="25"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" BiomeType="BIOME_PLAINS" Score="15"/>
+		<!-- DESERT, GRASSLAND, TROPICAL, MARINE, PLAINS, TUNDRA -->
+	</StartBiasBiomes>
+	<StartBiasTerrains>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" TerrainType="TERRAIN_COAST" Score="10"/>
+		<!-- MOUNTAIN, HILL, FLAT, COAST, OCEAN, NAVIGABLE_RIVER -->
+	</StartBiasTerrains>
+	<VisArt_CivilizationBuildingCultures>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" BuildingCulture="BUILDING_CULTURE_NEU"/>
+		<!-- BUILDING_CULTURE_[choice]: NAF, MED, EAS, PAC, MID, SAM, NAM -->
+		<Row CivilizationType="CIVILIZATION_CIMBRI" BuildingCulture="ANT_STONE"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" BuildingCulture="EXP_STONE"/>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" BuildingCulture="MOD_STONE"/>
+		<!-- ANT/EXP/MOD_MUD, ANT/EXP/MOD_STONE -->
+	</VisArt_CivilizationBuildingCultures>
+	<VisArt_CivilizationUnitCultures>
+		<Row CivilizationType="CIVILIZATION_CIMBRI" UnitCulture="Euro"/>
+		<!-- Afr, Med, Asian, MidE, SAmer, NAmer -->
+	</VisArt_CivilizationUnitCultures>
+
+	<EndGameMovies>
+	</EndGameMovies>
+</Database>

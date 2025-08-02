@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_JOSE_RIZAL_PREFIX_CIVNAME_TOOLTIP">
+			<Text>Some of [B]José Rizal[/B]'s ancestors were [B]Civname[/B].</Text>
+		</Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_TRUNG_TRAC_PREFIX_CIVNAME_TOOLTIP">
+			<Text>[B]Trung Trac[/B] was from the same region as the [B]Civname[/B].</Text>
+		</Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_HIMIKO_PREFIX_CIVNAME_TOOLTIP">
+			<Text>[B]Himiko[/B] was from the same continent as the [B]Civname[/B].</Text>
+		</Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_CONFUCIUS_PREFIX_CIVNAME_TOOLTIP">
+			<Text>The [B]Civname[/B] strategically complement [B]Confucius[/B].</Text>
+		</Row>
+
+		<Row Tag="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_DESCRIPTION">
+			<Text>Play as [B]Civname[/B].</Text>
+		</Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_CHOLA_TOOLTIP">
+			<Text>Play as [B]Civname[/B].</Text>
+		</Row>
+		<Row Tag="LOC_UNLOCK_PLAY_AS_PREFIX_CIVNAME_MAJAPAHIT_TOOLTIP">
+			<Text>Play as [B]Civname[/B].</Text>
+		</Row>
+	</EnglishText>
+</Database>

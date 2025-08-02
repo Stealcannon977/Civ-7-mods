@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_MODULE_CIMBRI_NAME">
+			<Text>Cimbri Civilization</Text>
+		</Row>
+		<Row Tag="LOC_MODULE_CIMBRI_DESCRIPTION">
+			<Text>Adds the Cimbri as an Antiquity Age civilization. The Cimbri were a fierce Germanic tribe known for their migrations and conflicts with Rome.</Text>
+		</Row>
+	</EnglishText>
+</Database>
