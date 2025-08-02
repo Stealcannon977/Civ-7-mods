@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Kinds>
+		<InsertOrIgnore Kind="KIND_CONSTRUCTIBLE"/>
+	</Kinds>
+	<Types>
+		<!--Civ Unique Improvements-->
+		<Row Type="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" Kind="KIND_CONSTRUCTIBLE"/>
+		<!--Wonders-->
+		<Row Type="WONDER_PREFIX_WONDERNAME" Kind="KIND_CONSTRUCTIBLE"/>
+	</Types>
+	<TypeTags>
+		<Row Type="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" Tag="UNIQUE_IMPROVEMENT"/>
+		<Row Type="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" Tag="AGELESS"/>
+	</TypeTags>
+	<TypeQuotes>
+        <Row Type="WONDER_PREFIX_WONDERNAME" Quote="LOC_QUOTE_WONDER_PREFIX_WONDERNAME" QuoteAuthor="LOC_QUOTE_AUTHOR_WONDER_PREFIX_WONDERNAME" QuoteAudio="VO_Quote_AngkorWat"/>
+	</TypeQuotes>
+	<Constructibles>
+		<!--Civ Unique Improvements-->
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" Name="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_NAME" Description="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_DESCRIPTION" Tooltip="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_TOOLTIP" ConstructibleClass="IMPROVEMENT" Cost="40" Population="1" Age="AGE_ANTIQUITY"/>
+		<!--Wonders-->
+		<Row ConstructibleType="WONDER_PREFIX_WONDERNAME" Name="LOC_WONDER_PREFIX_WONDERNAME_NAME" Description="LOC_WONDER_PREFIX_WONDERNAME_DESCRIPTION" Tooltip="LOC_WONDER_PREFIX_WONDERNAME_TOOLTIP" ConstructibleClass="WONDER" Cost="275" Population="0" ImmuneDamage="true" Age="AGE_ANTIQUITY" RequiresUnlock="true" />
+	</Constructibles>
+	<Improvements>
+		<!--Civ Unique Improvements-->
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" ResourceTier="0" CityBuildable="true" TraitType="TRAIT_PREFIX_CIVNAME" SameAdjacentValid="false"/>
+	</Improvements>
+	<Wonders>
+		<Row ConstructibleType="WONDER_PREFIX_WONDERNAME" MaxWorldInstances="1"/>
+	</Wonders>
+	<Constructible_RequiredFeatureClasses>
+		<!-- Check Base/modules/base-standard/data/terrain.xml -->
+	</Constructible_RequiredFeatureClasses>
+	<Constructible_ValidBiomes>
+		<Row ConstructibleType="WONDER_PREFIX_WONDERNAME" BiomeType="BIOME_TROPICAL"/>
+	</Constructible_ValidBiomes>
+	<Constructible_ValidTerrains>
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" TerrainType="TERRAIN_FLAT"/>
+	</Constructible_ValidTerrains>
+	<Constructible_ValidDistricts>
+		<!--Civ Unique Improvements-->
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" DistrictType="DISTRICT_RURAL"/>
+		<!--Wonders-->
+		<Row ConstructibleType="WONDER_PREFIX_WONDERNAME" DistrictType="DISTRICT_WONDER"/>
+	</Constructible_ValidDistricts>
+	<Constructible_YieldChanges>
+		<!--Civ Unique Improvements-->
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" YieldType="YIELD_FOOD" YieldChange="3"/>
+		<!--Wonders-->
+		<Row ConstructibleType="WONDER_PREFIX_WONDERNAME" YieldType="YIELD_HAPPINESS" YieldChange="2"/>
+	</Constructible_YieldChanges>
+	<Constructible_Adjacencies>
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" YieldChangeId="PrefixImprovementAdjacency"/>
+	</Constructible_Adjacencies>
+	<Constructible_Advisories>
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" AdvisoryClassType="ADVISORY_CLASS_ECONOMIC"/>
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" AdvisoryClassType="ADVISORY_CLASS_FOOD"/>
+	</Constructible_Advisories>
+	<Adjacency_YieldChanges>
+		<Row ID="PrefixImprovementAdjacency" YieldType="YIELD_FOOD" YieldChange="1" TilesRequired="1" AdjacentQuarter="true"/>
+	</Adjacency_YieldChanges>
+	<Constructible_Plunders>
+		<!--Civ Unique Improvements-->
+		<Row ConstructibleType="IMPROVEMENT_PREFIX_IMPROVEMENTNAME" PlunderType="PLUNDER_HEAL" Amount="30"/>
+	</Constructible_Plunders>
+	<ConstructibleModifiers>
+		<!--Wonders-->
+		<Row ConstructibleType="WONDER_PREFIX_WONDERNAME" ModifierId="MOD_PREFIX_WONDERNAME_GOLD_FROM_EXCESS_HAPPINESS"/>
+	</ConstructibleModifiers>
+	<Constructible_WarehouseYields>
+	</Constructible_WarehouseYields>
+	<Warehouse_YieldChanges>
+	</Warehouse_YieldChanges>
+</Database>

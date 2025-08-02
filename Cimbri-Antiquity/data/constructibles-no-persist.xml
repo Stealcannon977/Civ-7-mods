@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<!-- This is where any modifiers from your constructibles should go if they should not carry over -->
+	<!-- Generally you might not use this, as unique constructibles are ageless -->
+</Database>

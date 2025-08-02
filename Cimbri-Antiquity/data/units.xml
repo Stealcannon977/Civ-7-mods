@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<Types>
+    <Row Type="UNIT_CIMBRI_AMBRONES" Kind="KIND_UNIT"/>
+    <Row Type="ABILITY_CIMBRI_AMBRONES_WARRIOR" Kind="KIND_ABILITY"/>
+	</Types>
+	<Units>
+		<!-- Cimbri unique unit: Ambrones (Elite warriors) -->
+    <Row UnitType="UNIT_CIMBRI_AMBRONES" Name="LOC_UNIT_CIMBRI_AMBRONES_NAME" Description="LOC_UNIT_CIMBRI_AMBRONES_DESCRIPTION" Tier="1" BaseSightRange="2" BaseMoves="2" UnitMovementClass="UNIT_MOVEMENT_CLASS_FOOT" Domain="DOMAIN_LAND" CoreClass="CORE_CLASS_MILITARY" FormationClass="FORMATION_CLASS_LAND_COMBAT" ZoneOfControl="true" TraitType="TRAIT_CIMBRI"/>
+	</Units>
+	<Unit_Stats>
+    <Row UnitType="UNIT_CIMBRI_AMBRONES" Combat="28"/>
+	</Unit_Stats>
+	<Unit_Costs>
+    <Row UnitType="UNIT_CIMBRI_AMBRONES" YieldType="YIELD_PRODUCTION" Cost="35"/>
+	</Unit_Costs>
+	<Unit_Advisories>
+    <Row UnitType="UNIT_CIMBRI_AMBRONES" AdvisoryClassType="ADVISORY_CLASS_MILITARY"/>
+	</Unit_Advisories>
+	<Unit_RequiredConstructibles>
+		<!-- If a unit needs a constructible to exist before you can build it. Usually used for Naval units -->
+	</Unit_RequiredConstructibles>
+	<UnitUpgrades>
+		<!-- Ambrones can upgrade to spearman -->
+    <Row Unit="UNIT_CIMBRI_AMBRONES" UpgradeUnit="UNIT_SPEARMAN"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<!-- Replacements generally mean you won't be able to receive the original unit type -->
+    <Row CivUniqueUnitType="UNIT_CIMBRI_AMBRONES" ReplacesUnitType="UNIT_WARRIOR"/>
+	</UnitReplaces>
+  <Unit_TransitionRetains>
+		<!-- If the game should carry over your unit to the next age -->
+		<Row UnitType="UNIT_CIMBRI_AMBRONES"/>
+	</Unit_TransitionRetains>
+	<Tags>
+		<!-- Defines the class. You may want to use this for any modifier that affects your unique unit specifically -->
+    <Row Tag="UNIT_CLASS_CIMBRI_AMBRONES" Category="UNIT_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<!-- Don't forget to put proper tags, this is how some modifiers such as traditions or civics update your units -->
+    <Row Type="UNIT_CIMBRI_AMBRONES" Tag="UNIT_CLASS_COMBAT"/>
+		<Row Type="UNIT_CIMBRI_AMBRONES" Tag="UNIT_CLASS_MELEE"/>
+		<Row Type="UNIT_CIMBRI_AMBRONES" Tag="UNIT_CLASS_INFANTRY"/>
+		<Row Type="UNIT_CIMBRI_AMBRONES" Tag="UNIT_CLASS_CIMBRI_AMBRONES"/>
+	</TypeTags>
+	<UnitClass_Abilities>
+		<!-- This shows what UnitClass has what Ability -->
+    <Row UnitAbilityType="ABILITY_CIMBRI_AMBRONES_WARRIOR" UnitClassType="UNIT_CLASS_CIMBRI_AMBRONES"/>
+	</UnitClass_Abilities>
+	<UnitAbilities>
+		<!-- This shows what Abilities exist -->
+    <Row UnitAbilityType="ABILITY_CIMBRI_AMBRONES_WARRIOR" Name="LOC_ABILITY_CIMBRI_AMBRONES_WARRIOR_NAME" Description="LOC_ABILITY_CIMBRI_AMBRONES_WARRIOR_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<!-- This shows what Modifiers exist in which Ability -->
+    <Row UnitAbilityType="ABILITY_CIMBRI_AMBRONES_WARRIOR" ModifierId="CIMBRI_AMBRONES_TUNDRA_COMBAT_BONUS"/>
+	</UnitAbilityModifiers>
+</Database>

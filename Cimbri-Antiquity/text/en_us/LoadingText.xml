@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_LOADING_CIV_INTRO_TEXT_PREFIX_CIVNAME">
+			<Text>This is your loading intro text</Text>
+		</Row>
+		<Row Tag="LOC_LOADING_VO_PREFIX_CIVNAME">
+      <Text>This is your loading VO text</Text>
+		</Row>
+	</EnglishText>
+</Database>

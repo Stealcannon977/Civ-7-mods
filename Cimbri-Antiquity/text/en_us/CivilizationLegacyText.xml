@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <EnglishText>
+    <!--Civilization Names-->
+    <Row Tag="LOC_CIVILIZATION_CIMBRI_NAME">
+      <Text>Cimbri</Text>
+    </Row>
+    <!--Civilization Full Names-->
+    <Row Tag="LOC_CIVILIZATION_CIMBRI_FULLNAME">
+      <Text>Cimbri Antiquity Age Civilization</Text>
+    </Row>
+    <!--Civilization Adjectives-->
+    <Row Tag="LOC_CIVILIZATION_CIMBRI_ADJECTIVE">
+      <Text>Cimbrian</Text>
+    </Row>
+  </EnglishText>
+
+</Database>

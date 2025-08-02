@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	
+	<!-- ==================================================	-->
+	<!--					Wonders							-->
+	<!-- ==================================================	-->
+	<Modifier id="MOD_PREFIX_WONDERNAME_GOLD_FROM_EXCESS_HAPPINESS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_YIELD_PER_SURPLUS_HAPPINESS">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_WONDER_IS_ACTIVE">
+				<Argument name="ConstructibleType">WONDER_PREFIX_WONDERNAME</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="YieldType">YIELD_GOLD</Argument>
+		<Argument name="Amount">1</Argument>
+		<Argument name="Divisor">2</Argument>
+	</Modifier>
+</GameEffects>

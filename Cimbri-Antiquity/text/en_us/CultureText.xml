@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+
+		<!-- ==================================================	-->
+		<!--	TODO: CIMBRI							-->
+		<!-- ==================================================	-->
+		<Row Tag="LOC_TREE_CIVICS_AQ_CIMBRI_NAME">
+			<Text>Cimbri Civics</Text>
+		</Row>
+    
+		<Row Tag="LOC_CIVIC_CIMBRI_MIGRATION_NAME">
+			<Text>Great Migration</Text>
+		</Row>
+
+    <Row Tag="LOC_CIVIC_CIMBRI_WARFARE_NAME">
+			<Text>Warrior Culture</Text>
+		</Row>
+		<Row Tag="LOC_CIMBRI_WARFARE_MOD_CITY_DESCRIPTION">
+			<Text>Cities gain increased culture from military victories</Text>
+		</Row>
+		<Row Tag="LOC_CIMBRI_WARFARE_MOD_RESOURCE_CAP_DESCRIPTION">
+			<Text>Cities have a +2 resource cap</Text>
+		</Row>
+
+    <Row Tag="LOC_TRADITION_CIMBRI_WANDERER_NAME">
+			<Text>Northern Wanderers</Text>
+		</Row>
+		<Row Tag="LOC_TRADITION_CIMBRI_WANDERER_DESCRIPTION">
+			<Text>Units move faster through tundra and plains terrain</Text>
+		</Row>
+
+    <Row Tag="LOC_CIVIC_CIMBRI_WARFARE_QUOTE">
+			<Text>"They came like wolves from the north, bringing death and terror."</Text>
+		</Row>
+    <Row Tag="LOC_CIVIC_CIMBRI_WARFARE_QUOTE_AUTHOR">
+			<Text>Roman Chronicle</Text>
+		</Row>
+
+    <Row Tag="LOC_CIVIC_CIMBRI_MIGRATION_QUOTE">
+			<Text>"No land holds us, for the frozen wind calls us ever forward."</Text>
+		</Row>
+    <Row Tag="LOC_CIVIC_CIMBRI_MIGRATION_QUOTE_AUTHOR">
+			<Text>Cimbrian Proverb</Text>
+		</Row>
+	</EnglishText>
+</Database>

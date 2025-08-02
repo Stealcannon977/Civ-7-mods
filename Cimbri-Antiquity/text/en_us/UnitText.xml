@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<Row Tag="LOC_UNIT_CIMBRI_AMBRONES_NAME">
+			<Text>Ambrones</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CIMBRI_AMBRONES_DESCRIPTION">
+			<Text>Cimbri unique warrior unit. Elite tribal warriors known for their ferocity in battle. Gains +5 Combat Strength when fighting in Tundra terrain.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_CIMBRI_AMBRONES_WARRIOR_NAME">
+			<Text>Northern Warrior</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_CIMBRI_AMBRONES_WARRIOR_DESCRIPTION">
+			<Text>Elite Cimbri warriors adapted to harsh northern climates.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_CIMBRI_AMBRONES_TUNDRA_COMBAT_DESCRIPTION">
+			<Text>+5 Combat Strength when fighting in Tundra terrain.</Text>
+		</Row>
+	</EnglishText>
+</Database>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<!-- If you ever wonder what possible game effects there are, the best resource we have so far are the files of the base game, DLC, and other mods-->
+	<!-- As of time of writing, there's no official documentation about all possibilities. Trial and error is your best bet, other than asking around! -->
+	<!-- Modders don't bite, and are generally happy to answer questions -->
+
+	<!-- ==================================================	-->
+	<!--				Civ-Specific Traits					-->
+	<!-- ==================================================	-->
+	<!-- CIMBRI -->
+  <Modifier id="TRAIT_CIMBRI_MOD_CITY_HALL_YIELDS" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_CONSTRUCTIBLE_YIELD">
+    <Argument name="YieldType">YIELD_FOOD</Argument>
+		<Argument name="Amount">20</Argument>
+		<Argument name="ConstructibleType">BUILDING_CITY_HALL</Argument>
+  </Modifier>
+
+	<!-- Northern Fury: Units gain movement in tundra/snow -->
+	<Modifier id="TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_TUNDRA" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI_ABILITY</Argument>
+			</Requirement>
+			<Requirement type="REQUIREMENT_UNIT_ON_TERRAIN">
+				<Argument name="TerrainType">TERRAIN_TUNDRA</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">1</Argument>
+		<String context="Preview">LOC_TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_DESCRIPTION</String>
+	</Modifier>
+
+	<Modifier id="TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_SNOW" collection="COLLECTION_PLAYER_UNITS" effect="EFFECT_UNIT_ADJUST_MOVEMENT">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI_ABILITY</Argument>
+			</Requirement>
+			<Requirement type="REQUIREMENT_UNIT_ON_TERRAIN">
+				<Argument name="TerrainType">TERRAIN_SNOW</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Amount">1</Argument>
+		<String context="Preview">LOC_TRAIT_CIMBRI_NORTHERN_FURY_MOVEMENT_DESCRIPTION</String>
+	</Modifier>
+
+	<!-- Tundra adaptation: +2 food from tundra tiles -->
+	<Modifier id="TRAIT_CIMBRI_TUNDRA_FOOD_BONUS" collection="COLLECTION_PLAYER_PLOTS" effect="EFFECT_ADJUST_TERRAIN_YIELD">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI_ABILITY</Argument>
+			</Requirement>
+			<Requirement type="REQUIREMENT_PLOT_TERRAIN">
+				<Argument name="TerrainType">TERRAIN_TUNDRA</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="YieldType">YIELD_FOOD</Argument>
+		<Argument name="Amount">2</Argument>
+		<String context="Preview">LOC_TRAIT_CIMBRI_TUNDRA_FOOD_DESCRIPTION</String>
+	</Modifier>
+
+  <Modifier id="MOD_CODE_OF_LAWS_REVEAL_CIV_CULTURE_TREE_CIMBRI" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_REVEAL_CULTURE_TREE">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="ProgressionTreeType">TREE_CIVICS_AQ_CIMBRI</Argument>
+	</Modifier>
+
+	<!-- ==================================================	-->
+	<!--				Wonder Bonuses						-->
+	<!-- ==================================================	-->
+	<Modifier id="MOD_CIV_WONDER_PRODUCTION_CIMBRI" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_ADJUST_FAVORED_WONDER_PRODUCTION">
+		<SubjectRequirements>
+			<Requirement type="REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT">
+				<Argument name="TraitType">TRAIT_CIMBRI</Argument>
+			</Requirement>
+		</SubjectRequirements>
+		<Argument name="Percent">30</Argument>
+		<String context="Preview">LOC_MOD_CIV_WONDER_PRODUCTION_CIMBRI_DESCRIPTION</String>
+	</Modifier>
+</GameEffects>

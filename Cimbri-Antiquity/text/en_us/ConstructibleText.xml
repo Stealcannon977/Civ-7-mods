@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+	<EnglishText>
+		<!--Civ Unique Improvements-->
+		<Row Tag="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_NAME">
+			<Text>Improvement Name</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_DESCRIPTION">
+			<Text>Improvement Description</Text>
+		</Row>
+    <Row Tag="LOC_IMPROVEMENT_PREFIX_IMPROVEMENTNAME_TOOLTIP">
+			<Text>Civname Unique Improvement. Ageless.</Text>
+		</Row>
+
+    <Row Tag="LOC_WONDER_PREFIX_WONDERNAME_NAME">
+			<Text>Wonder Name</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_PREFIX_WONDERNAME_DESCRIPTION">
+			<Text>Wonder Description</Text>
+		</Row>
+		<Row Tag="LOC_WONDER_PREFIX_WONDERNAME_TOOLTIP">
+			<Text>Wonder Tooltip</Text>
+		</Row>
+
+    <Row Tag="LOC_QUOTE_WONDER_PREFIX_WONDERNAME">
+			<Text>Wonder Quote</Text>
+		</Row>
+    <Row Tag="LOC_QUOTE_AUTHOR_WONDER_PREFIX_WONDERNAME">
+        <Text>Wonder Quote Author</Text>
+    </Row>
+	</EnglishText>
+</Database>
